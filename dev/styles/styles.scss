@@ -1,7 +1,122 @@
-h1 {
-	color: darkcyan;
-}
 
 body {
 	margin: 0;
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	background: ghostwhite;
+}
+header{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(to top, ghostwhite, coral) center no-repeat;
+	background-size: cover;
+	margin-bottom: 4rem;
+}
+
+h1 {
+	// color: darkcyan;
+	position: relative;
+	font-weight: 400;
+	border-radius: 1rem;
+	padding: 5%;
+	background-color: ghostwhite;
+	color: #999;
+	span:not(:first-of-type):not(:last-of-type){
+		// width: 100%;
+		padding-left: 3rem;
+		margin: 1rem 0;
+		display: block;
+	}
+}
+h3{
+	color: #777;
+	font-weight: 500;
+	font-size: 2rem;
+}
+a, a:visited, a:active{
+	color: inherit;
+	color: #777;
+	text-decoration: none;
+	transition: color .2s ease-in-out;
+	&:hover{
+		color:coral
+	}
+}
+.row{
+	width: 100%;
+}
+
+.container{
+	margin-bottom: 4rem;
+	object{
+		width: 100%;
+		min-height: 400px;
+		border: 5px solid #999;
+		border-radius: 1rem;
+		overflow: scroll;
+	}
+}
+
+
+.wrapper{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.examples{
+	border-bottom: 5px solid coral;
+	border-top: 5px solid coral;
+	padding: 4rem 0;
+	margin: 4rem auto;
+	.row{
+		position: relative;
+		width: 100%;
+		min-height: 45vh;
+		background: url(https://source.unsplash.com/random) center no-repeat;
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 1rem 0;
+		border-left: 5px solid coral;
+	}
+	.blend{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 45%;
+		padding: 5%;
+		background-color: coral;
+		color: ghostwhite;
+		
+		border-radius: 1rem;
+		z-index: 999;
+		h4{
+			background: none;
+			font-weight: 400;
+			font-size: 1.5rem;
+		}
+	}
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	background: linear-gradient(to bottom, ghostwhite, coral) center no-repeat;
+	padding: 4rem 0 0rem;
+	color: #777;
+	h4, a{
+		font-weight: 400;
+		width: 100%;
+		margin-top: 0;
+	}
+	.container{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 2rem;
+		background: ghostwhite;
+		border-radius: 1rem;
+	}
 }
